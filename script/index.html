@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>点标记的动画效果</title>
+	<style type="text/css">
+		body{
+			font-size:9px;
+		}
+		
+		#which_tip{
+			background-color:#51b0fb;
+			border:1px solid #ccc;
+			padding:3px 3px 3px 3px;
+			position:absolute;
+			font-size:11px;
+			top:120px;
+			left:120px;
+			border-radius:3px;
+			line-height:15px;
+			overflow:hidden;
+			z-index:9;
+		}
+		
+	    #which_tip input{
+	    	outline:none;
+	    	border:1px solid #ddd;
+	    	border-radius:3px;
+	    }
+
+	</style>
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery.amap.js"></script>
+    </head>
+<body>
+
+    <div id="mapContainer"></div>
+   	<div id="which_tip">
+	    LNG:<input type="text" id="yjcun_goods_lng" size=8/>
+	    LAT:<input type="text" id="yjcun_goods_lat" size=8/>
+   	</div>
+    
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=3bd29f392144bf3597f60e0330ba65e8"></script>
+	<script type="text/javascript">
+		//$('#mapContainer').amap();
+		$('#mapContainer').amap({
+			width : '500px',
+			height : '500px',
+			lngInputId : "yjcun_goods_lng",
+			latInputId : "yjcun_goods_lat",
+			tips : {
+				size : 60,
+			}
+		});
+	</script>
+</body>
+</html>						
+
+	
