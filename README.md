@@ -1,8 +1,6 @@
 # JQuqey Amap
 
-@(Hehangjie)[互联网中尉 www.itlieutenant.com]
-
-[TOC]
+Hehangjie  [互联网中尉 www.itlieutenant.com]
 
 
 #### Summary
@@ -12,11 +10,15 @@
 
 * 首先在页面（htm或jsp）上定义一个DIV
 
-`<div id="your_div_id"></div>`
+``` html
+<div id="your_div_id"></div>
+```
 
 * 其次在<script>...</script>中实例化
 
-`$("#your_div_id").amap();`
+``` javascript
+$("#your_div_id").amap();
+```
 
 #### 地图插件中实现了
 
